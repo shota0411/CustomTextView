@@ -15,6 +15,7 @@
 		146488C42094AF2E0015C19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146488C22094AF2E0015C19C /* LaunchScreen.storyboard */; };
 		146488CF2094AF2E0015C19C /* CustomTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146488CE2094AF2E0015C19C /* CustomTextViewTests.swift */; };
 		146488DA2094AF2E0015C19C /* CustomTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146488D92094AF2E0015C19C /* CustomTextViewUITests.swift */; };
+		146488E82094AF910015C19C /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146488E72094AF910015C19C /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		146488D52094AF2E0015C19C /* CustomTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146488D92094AF2E0015C19C /* CustomTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewUITests.swift; sourceTree = "<group>"; };
 		146488DB2094AF2E0015C19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146488E72094AF910015C19C /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				146488C22094AF2E0015C19C /* LaunchScreen.storyboard */,
 				146488C52094AF2E0015C19C /* Info.plist */,
 				146488BD2094AF2E0015C19C /* CustomTextView.xcdatamodeld */,
+				146488E72094AF910015C19C /* CustomTextView.swift */,
 			);
 			path = CustomTextView;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				146488BF2094AF2E0015C19C /* CustomTextView.xcdatamodeld in Sources */,
 				146488B92094AF2E0015C19C /* ViewController.swift in Sources */,
+				146488E82094AF910015C19C /* CustomTextView.swift in Sources */,
 				146488B72094AF2E0015C19C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
