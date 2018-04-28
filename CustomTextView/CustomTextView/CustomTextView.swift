@@ -44,6 +44,28 @@ public class CustomTextView: UITextView {
         // 枠線をつける
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.gray.cgColor
+        
+        //////////UIToolBarの設定////////////////////
+        //キードードを閉じるボタンを作るためにツールバーを生成
+        let toolBar = UIToolbar()
+        
+        //toolBarのサイズを設定
+        toolBar.frame = CGRect(x: 0, y: 0, width: 300, height: 30)
+        
+        //画面幅に合わせるように設定
+        toolBar.sizeToFit()
+        
+        //Doneボタンを右に配置するためのスペース
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
+        
+        //textViewにツールバーを設定
+        self.inputAccessoryView = toolBar
+        
+        //Doneボタン
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneButton))
+        
+        //ツールバーにボタンを設定
+        toolBar.items = [space,doneButton]
         self.addSubview(placeholderLabel!)
     }
     
@@ -85,6 +107,12 @@ public class CustomTextView: UITextView {
         else {
             placeholderLabel?.isHidden = true
         }
+    }
+    
+    //doneボタンを押した時の処理
+    @objc func doneButton(){
+        //キーボードを閉じる
+        self.endEditing(true)
     }
     
 }
