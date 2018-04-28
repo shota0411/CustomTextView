@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let placeHolder: CustomTextView = CustomTextView.init(frame: CGRect(x: 10, y: 200, width: 300, height: 100))
+        placeHolder.placeHolder = "プレースホルダー付きUITextView"
+        placeHolder.PlaceHolderColor = UIColor.blue
+        placeHolder.layer.cornerRadius = 30
+        
+        self.view.addSubview(placeHolder)
     }
 
     override func didReceiveMemoryWarning() {
